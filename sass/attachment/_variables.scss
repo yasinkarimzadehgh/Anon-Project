@@ -1,4 +1,4 @@
-// Color:
+//! Color:
 $spanish-gray: hsl(0, 0%, 60%);
 $sonic-silver: hsl(0, 0%, 47%);
 $eerie-black: hsl(0, 0%, 13%);
@@ -6,9 +6,21 @@ $salmon-pink: hsl(353, 100%, 78%);
 $sandy-brown: hsl(29, 90%, 65%);
 $bittersweet: hsl(0, 100%, 70%);
 $ocean-green: hsl(152, 51%, 52%);
-$davys-gray: hsl(0, 0%, 33%);
 $cultured: hsl(0, 0%, 93%);
 $white: hsl(0, 100%, 100%);
 $onyx: hsl(0, 0%, 27%);
 
+// ! breakpoints :
+$phone:400px;
+$phone-wide:480px;
+$phablet:560px;
+$tablet-small:640px;
+$tablet:768px;
+$tablet-wide:1024px;
+$desktop:1248px;
+$desktop-wide:1440px;
 
+// ! Font :
+$primary-font-family :"Poppins";
+$primary-font-size:2.4rem;
+$primary-font-color: #333333;
