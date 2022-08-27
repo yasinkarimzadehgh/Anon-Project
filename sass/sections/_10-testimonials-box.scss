@@ -1,11 +1,18 @@
 .testimonials-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
   .testimonial{
     background-color: rgb(255, 145, 0);
+    flex: 1;
   }
   .testimonial-banner{
-    background-color: rgb(144, 76, 153);
+    background-color: rgb(182, 17, 17);
+    flex: 2;
   }
   .testimonial-service{
     background-color: rgb(82, 153, 76);
+    flex: 1;
   }
 }

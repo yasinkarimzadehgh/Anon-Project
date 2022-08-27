@@ -7,14 +7,15 @@
     "g03 g03 g03 g03 g03 g03 g03 g03 g03 g03 g03 g03 g03"
     "g04 g04 g04 g04 g04 g04 g04 g04 g04 g04 g04 g04 g04"
     "g05 g05 g05 g05 g05 g05 g05 g05 g05 g05 g05 g05 g05"
-    "g06 g06 g06 g06 g06 g07 g07 g07 g07 g07 g07 g07 g07"
-    "g06 g06 g06 g06 g06 g08 g08 g08 g08 g08 g08 g08 g08"
-    "g06 g06 g06 g06 g06 g09 g09 g09 g09 g09 g09 g09 g09"
+    "g06 g06 g06 g06 g07 g07 g07 g07 g07 g07 g07 g07 g07"
+    "g06 g06 g06 g06 g08 g08 g08 g08 g08 g08 g08 g08 g08"
+    "g06 g06 g06 g06 g09 g09 g09 g09 g09 g09 g09 g09 g09"
     "g10 g10 g10 g10 g10 g10 g10 g10 g10 g10 g10 g10 g10"
     "g11 g11 g11 g11 g11 g11 g11 g11 g11 g11 g11 g11 g11"
     "g12 g12 g12 g12 g12 g12 g12 g12 g12 g12 g12 g12 g12"
     ;
-  grid-auto-rows: min-content;
+  grid-auto-rows: 500px;
+  gap: 20px;
 }
 
 .gridItem-1 {
