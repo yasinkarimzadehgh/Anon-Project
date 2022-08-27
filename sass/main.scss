@@ -1,11 +1,24 @@
 @import "attachment/variables";
+@import "attachment/grid&responsive";
 @import "attachment/mixin";
 @import "attachment/animations";
-@import "attachment/grid";
 @import "attachment/utilities";
 @import "attachment/base";
 @import "attachment/reset";
-@import "attachment/responsive";
 @import "attachment/fonts";
+
 // ---------------------------------------
+@import "sections/01-header-social";
+@import "sections/02-header-main";
+@import "sections/03-header-menu";
+@import "sections/04-header-slider";
+@import "sections/05-category-item";
+@import "sections/06-sidebar";
+@import "sections/07-product-minimal";
+@import "sections/08-product-featured";
+@import "sections/09-product-main";
+@import "sections/10-product-minimal";
+@import "sections/11-testimonials-box";
+@import "sections/12-blog-container";
+@import "sections/13-footer";
 
