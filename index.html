@@ -9,6 +9,8 @@
 
   <!-- favicon -->
   <link rel="shortcut icon" href="images/logo/favicon.ico" type="image/x-icon">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- css link -->
   <link rel="stylesheet" href="css/main.css">
@@ -24,7 +26,26 @@
 <body>
   <div class="container">
     <!-- * -------------------------------------------------------- * -->
-    <section class="header-social gridItem-1">header-social</section>
+    <section class="header-top gridItem-1">
+      <div class="header-top__socials">
+        <i class="fa-brands fa-square-facebook"></i>        
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <div class="header-top__news">Free Shipping This Week Order Over - $55</div>
+      <div class="header-top__actions">
+        <select name="currency" class="currencySelect">
+          <option value="usd">USD $</option>
+          <option value="eur">EUR €</option>
+        </select>
+        <select name="language" class="languageSelect">
+          <option value="en-US">English</option>
+          <option value="es-ES">Español</option>
+          <option value="fr">Français</option>
+        </select>
+      </div>
+    </section>
     <!-- * -------------------------------------------------------- * -->
     <section class="header-main gridItem-2">header-main</section>
     <!-- * -------------------------------------------------------- * -->

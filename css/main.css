@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(13, 1fr);
   grid-template-areas: "g01 g01 g01 g01 g01 g01 g01 g01 g01 g01 g01 g01 g01" "g02 g02 g02 g02 g02 g02 g02 g02 g02 g02 g02 g02 g02" "g03 g03 g03 g03 g03 g03 g03 g03 g03 g03 g03 g03 g03" "g04 g04 g04 g04 g04 g04 g04 g04 g04 g04 g04 g04 g04" "g05 g05 g05 g05 g05 g05 g05 g05 g05 g05 g05 g05 g05" "g06 g06 g06 g07 g07 g07 g07 g07 g07 g07 g07 g07 g07" "g06 g06 g06 g08 g08 g08 g08 g08 g08 g08 g08 g08 g08" "g06 g06 g06 g09 g09 g09 g09 g09 g09 g09 g09 g09 g09" "g10 g10 g10 g10 g10 g10 g10 g10 g10 g10 g10 g10 g10" "g11 g11 g11 g11 g11 g11 g11 g11 g11 g11 g11 g11 g11" "g12 g12 g12 g12 g12 g12 g12 g12 g12 g12 g12 g12 g12";
-  grid-auto-rows: 500px;
 }
 
 .gridItem-1 {
@@ -66,8 +65,8 @@ html {
 }
 
 .container {
-  width: 98%;
-  margin: 20px auto;
+  width: 90%;
+  margin: 0 auto;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
 }
@@ -126,8 +125,42 @@ table {
   border-spacing: 0;
 }
 
-.header-social {
-  background-color: orangered;
+.header-top {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(0deg, 0%, 47%);
+}
+.header-top__socials i {
+  padding: 0.4rem;
+  background-color: hsl(0deg, 0%, 93%);
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.header-top__socials i:hover {
+  background-color: hsl(353deg, 100%, 78%);
+  color: hsl(0deg, 100%, 100%);
+}
+.header-top__news {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+.header-top__actions select {
+  border: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: inherit;
+  padding: 10px 0;
+}
+.header-top__actions .currencySelect {
+  width: 80px;
+}
+.header-top__actions .languageSelect {
+  width: 100px;
 }
 
 .header-main {

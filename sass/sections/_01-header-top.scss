@@ -1,0 +1,40 @@
+.header-top{
+    padding: 1rem 0;
+    @include flexRowSpaceBetween;
+    color: $sonic-silver;
+
+    &__socials{
+        i{
+            padding: 0.4rem;
+            background-color: $cultured;
+            border-radius: 0.5rem;
+            font-size: 1.3rem;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            &:hover{
+                background-color: $salmon-pink;
+                color: $white;
+            }
+        }
+    }
+    &__news{
+        font-size: 0.9rem;
+        text-transform: uppercase;
+    }
+    &__actions{
+        select{
+            border: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: inherit;
+            padding: 10px 0;
+        }
+        .currencySelect{
+            width: 80px;   
+        }
+        .languageSelect{
+            width: 100px;
+
+        }
+    }
+}
