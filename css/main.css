@@ -205,6 +205,7 @@ table {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  margin-right: 1.5rem;
 }
 .header-main__userAction i {
   width: 2rem;
@@ -235,11 +236,42 @@ table {
 }
 
 .header-menu {
-  background-color: blueviolet;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 13%);
+  padding: 17px;
+}
+.header-menu .menu-category-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-menu .menu-title {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+  padding: 14px;
+}
+.header-menu .menu-title::after {
+  content: "";
+  border-bottom: 3px solid hsl(0deg, 100%, 70%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  transition: all 0.3s ease;
+}
+.header-menu .menu-title:hover {
+  color: hsl(0deg, 100%, 70%);
+}
+.header-menu .menu-title:hover::after {
+  right: 0;
 }
 
 .header-slider {
-  background-color: palevioletred;
+  background-color: rgb(166, 166, 166);
 }
 
 .category-item {

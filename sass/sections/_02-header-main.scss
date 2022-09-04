@@ -27,12 +27,12 @@
       top: 1rem;
       right: 1.2rem;
       font-size: 1.2rem;
-
     }
   }
   &__userAction{
     @include flexRowSpaceBetween;
     position: relative;
+    margin-right: 1.5rem;
     i{
       width: 2rem;
       margin: 0 0.7rem;
@@ -48,7 +48,6 @@
       border-radius: 1000px;
       position: absolute;
       @include flexCenter;
-
     }
     .i2{
       top: -0.8rem;
