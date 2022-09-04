@@ -1,3 +1,22 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(13, 1fr);
@@ -50,25 +69,6 @@
 
 .gridItem-12 {
   grid-area: g12;
-}
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 63%;
-}
-
-.container {
-  width: 90%;
-  margin: 0 auto;
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -135,9 +135,9 @@ table {
 }
 .header-top__socials i {
   padding: 0.4rem;
-  background-color: hsl(0deg, 0%, 93%);
+  background-color: hsl(0deg, 0%, 86%);
   border-radius: 0.5rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   transition: all 0.2s ease;
   cursor: pointer;
 }
@@ -154,17 +154,84 @@ table {
   font-size: 0.9rem;
   text-transform: uppercase;
   color: inherit;
-  padding: 10px 0;
+  margin: 0 1rem;
+  padding: 1rem 0;
 }
 .header-top__actions .currencySelect {
-  width: 80px;
+  width: 4.5rem;
 }
 .header-top__actions .languageSelect {
-  width: 100px;
+  width: 6rem;
 }
 
 .header-main {
-  background-color: rgb(35, 212, 64);
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  color: hsl(0deg, 0%, 47%);
+  border-top: 1px solid hsl(0deg, 0%, 86%);
+  border-bottom: 1px solid hsl(0deg, 0%, 86%);
+}
+.header-main__logo {
+  width: 200px;
+}
+.header-main__logo img {
+  width: 130px;
+}
+.header-main__searchBox {
+  width: 100%;
+  margin: 0 10rem;
+  position: relative;
+}
+.header-main__searchBox input {
+  width: 100%;
+  font-family: inherit;
+  padding: 0.8rem 1rem;
+  padding-right: 3rem;
+  border: 0.5px solid hsl(0deg, 0%, 86%);
+  border-radius: 0.5rem;
+}
+.header-main__searchBox i {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  font-size: 1.2rem;
+}
+.header-main__userAction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.header-main__userAction i {
+  width: 2rem;
+  margin: 0 0.7rem;
+  font-size: 1.5rem;
+  color: hsl(0deg, 0%, 27%);
+}
+.header-main__userAction span {
+  width: 20px;
+  height: 20px;
+  background-color: hsl(0deg, 100%, 70%);
+  color: hsl(0deg, 100%, 100%);
+  font-size: 0.7rem;
+  border-radius: 1000px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header-main__userAction .i2 {
+  top: -0.8rem;
+  left: 5.5rem;
+}
+.header-main__userAction .i3 {
+  top: -0.8rem;
+  left: 9.2rem;
 }
 
 .header-menu {

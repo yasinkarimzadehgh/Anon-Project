@@ -1,3 +1,62 @@
 .header-main{
-  background-color: rgb(35, 212, 64);
+  padding: 1rem 0;
+  @include flexRowSpaceEvenly;
+  color: $sonic-silver;
+  border-top: 1px solid $cultured;
+  border-bottom: 1px solid $cultured;
+  &__logo{
+    width: 200px;
+    img{
+      width: 130px;
+    }
+  }
+  &__searchBox{
+    width: 100%;
+    margin: 0 10rem;
+    position: relative;
+    input{
+      width: 100%;
+      font-family: inherit;
+      padding: 0.8rem 1rem;
+      padding-right: 3rem;
+      border: 0.5px solid $cultured;
+      border-radius: 0.5rem;
+    }
+    i{
+      position: absolute;
+      top: 1rem;
+      right: 1.2rem;
+      font-size: 1.2rem;
+
+    }
+  }
+  &__userAction{
+    @include flexRowSpaceBetween;
+    position: relative;
+    i{
+      width: 2rem;
+      margin: 0 0.7rem;
+      font-size: 1.5rem;
+      color: $onyx;
+    }
+    span{
+      width: 20px;
+      height: 20px;
+      background-color:$bittersweet;
+      color: $white;
+      font-size: 0.7rem;
+      border-radius: 1000px;
+      position: absolute;
+      @include flexCenter;
+
+    }
+    .i2{
+      top: -0.8rem;
+      left: 5.5rem;
+    }
+    .i3{
+      top: -0.8rem;
+      left: 9.2rem;
+    }
+  }
 }
