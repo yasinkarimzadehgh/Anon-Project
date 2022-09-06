@@ -9,7 +9,7 @@
             background-color: $cultured;
             border-radius: 0.5rem;
             font-size: 1.1rem;
-            transition: all 0.2s ease;
+            transition: $transition;
             cursor: pointer;
             &:hover{
                 background-color: $salmon-pink;

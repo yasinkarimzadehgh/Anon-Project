@@ -1,16 +1,17 @@
 .header-menu{
   font-weight: 600;
   text-transform: uppercase;
-  color: $eerie-black;
   padding: 17px;
+  position: relative;
   .menu-category-list{
     @include flexCenter;
     flex-wrap: wrap;
   }
   .menu-title{
+    color: $onyx;
     cursor: pointer;
     position: relative;
-    transition: all 0.2s ease;
+    transition: $transition;
     padding: 14px;
     &::after{
       content: "";
@@ -19,7 +20,7 @@
       bottom: 0;
       left: 0;
       right: 100%;
-      transition: all 0.3s ease;
+      transition: $transition;
     }
     &:hover{
       color: $bittersweet;
@@ -27,5 +28,33 @@
         right: 0;
       }
     }
+  }
+}
+
+// SubMenu :
+.men-submenu{
+  display: inline-block;
+  background-color: $white;
+  border-radius: 5px;
+  padding: 17px;
+  padding-right: 70px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: absolute;
+  left : 36%;
+  z-index: 1000;
+  transition: $transition;
+  opacity: 0;
+}
+
+.men-submenu-item{
+  margin: 10px 0;
+  font-weight: 400;
+}
+.men-submenu-title{
+  color: $onyx;
+  text-transform: capitalize;
+  transition: $transition;
+  &:hover{
+    color: $bittersweet;
   }
 }

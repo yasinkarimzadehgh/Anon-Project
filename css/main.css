@@ -17,6 +17,12 @@ html {
   font-size: 1rem;
 }
 
+a {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 13%);
+  text-decoration: none;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(13, 1fr);
@@ -238,8 +244,8 @@ table {
 .header-menu {
   font-weight: 600;
   text-transform: uppercase;
-  color: hsl(0deg, 0%, 13%);
   padding: 17px;
+  position: relative;
 }
 .header-menu .menu-category-list {
   display: flex;
@@ -249,6 +255,7 @@ table {
   flex-wrap: wrap;
 }
 .header-menu .menu-title {
+  color: hsl(0deg, 0%, 27%);
   cursor: pointer;
   position: relative;
   transition: all 0.2s ease;
@@ -261,13 +268,41 @@ table {
   bottom: 0;
   left: 0;
   right: 100%;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 .header-menu .menu-title:hover {
   color: hsl(0deg, 100%, 70%);
 }
 .header-menu .menu-title:hover::after {
   right: 0;
+}
+
+.men-submenu {
+  display: inline-block;
+  background-color: hsl(0deg, 100%, 100%);
+  border-radius: 5px;
+  padding: 17px;
+  padding-right: 70px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: absolute;
+  left: 36%;
+  z-index: 1000;
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+
+.men-submenu-item {
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.men-submenu-title {
+  color: hsl(0deg, 0%, 27%);
+  text-transform: capitalize;
+  transition: all 0.2s ease;
+}
+.men-submenu-title:hover {
+  color: hsl(0deg, 100%, 70%);
 }
 
 .header-slider {
