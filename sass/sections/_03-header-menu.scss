@@ -28,22 +28,23 @@
     }
   }
 }
-//men-menu :
+//-----------------------------------------------------------------
+//! men-menu :
 .men-menu{
   position: relative;
 }
 .men-submenu{
-  display: inline-block;
   background-color: $white;
   border-radius: 5px;
   padding: 20px;
   padding-right: 45px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   position: absolute;
+  top: 102%;
   left : 0;
   z-index: 1000;
+  display: none;
   transition: $transition;
-  opacity: 0;
 }
 
 .men-submenu-item{
@@ -53,6 +54,74 @@
   font-weight: 400;
 }
 .men-submenu-title{
+  width: 100%;
+  color: $onyx;
+  text-transform: capitalize;
+  transition: $transition;
+  &:hover{
+    color: $bittersweet;
+  }
+}
+//-----------------------------------------------------------------
+//! women-menu :
+.women-menu{
+  position: relative;
+}
+.women-submenu{
+  background-color: $white;
+  border-radius: 5px;
+  padding: 20px;
+  padding-right: 45px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: absolute;
+  top: 102%;
+  left : 0;
+  z-index: 1000;
+  display: none;
+  transition: $transition;
+}
+
+.women-submenu-item{
+  display: block;
+  width: 150px;
+  margin: 10px 0;
+  font-weight: 400;
+}
+.women-submenu-title{
+  width: 100%;
+  color: $onyx;
+  text-transform: capitalize;
+  transition: $transition;
+  &:hover{
+    color: $bittersweet;
+  }
+}
+//-----------------------------------------------------------------
+//! jewelry-menu :
+.jewelry-menu{
+  position: relative;
+}
+.jewelry-submenu{
+  background-color: $white;
+  border-radius: 5px;
+  padding: 20px;
+  padding-right: 45px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: absolute;
+  top: 102%;
+  left : 0;
+  z-index: 1000;
+  display: none;
+  transition: $transition;
+}
+
+.jewelry-submenu-item{
+  display: block;
+  width: 150px;
+  margin: 10px 0;
+  font-weight: 400;
+}
+.jewelry-submenu-title{
   width: 100%;
   color: $onyx;
   text-transform: capitalize;

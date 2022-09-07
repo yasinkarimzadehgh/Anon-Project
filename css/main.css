@@ -280,17 +280,17 @@ table {
 }
 
 .men-submenu {
-  display: inline-block;
   background-color: hsl(0deg, 100%, 100%);
   border-radius: 5px;
   padding: 20px;
   padding-right: 45px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   position: absolute;
+  top: 102%;
   left: 0;
   z-index: 1000;
+  display: none;
   transition: all 0.2s ease;
-  opacity: 0;
 }
 
 .men-submenu-item {
@@ -307,6 +307,76 @@ table {
   transition: all 0.2s ease;
 }
 .men-submenu-title:hover {
+  color: hsl(0deg, 100%, 70%);
+}
+
+.women-menu {
+  position: relative;
+}
+
+.women-submenu {
+  background-color: hsl(0deg, 100%, 100%);
+  border-radius: 5px;
+  padding: 20px;
+  padding-right: 45px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: absolute;
+  top: 102%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  transition: all 0.2s ease;
+}
+
+.women-submenu-item {
+  display: block;
+  width: 150px;
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.women-submenu-title {
+  width: 100%;
+  color: hsl(0deg, 0%, 27%);
+  text-transform: capitalize;
+  transition: all 0.2s ease;
+}
+.women-submenu-title:hover {
+  color: hsl(0deg, 100%, 70%);
+}
+
+.jewelry-menu {
+  position: relative;
+}
+
+.jewelry-submenu {
+  background-color: hsl(0deg, 100%, 100%);
+  border-radius: 5px;
+  padding: 20px;
+  padding-right: 45px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: absolute;
+  top: 102%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  transition: all 0.2s ease;
+}
+
+.jewelry-submenu-item {
+  display: block;
+  width: 150px;
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.jewelry-submenu-title {
+  width: 100%;
+  color: hsl(0deg, 0%, 27%);
+  text-transform: capitalize;
+  transition: all 0.2s ease;
+}
+.jewelry-submenu-title:hover {
   color: hsl(0deg, 100%, 70%);
 }
 
